@@ -1,0 +1,131 @@
+## Foundry
+
+**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+
+Foundry consists of:
+
+-   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+-   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+-   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+-   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+
+## Documentation
+
+https://book.getfoundry.sh/
+
+## Usage
+
+### Build
+
+```shell
+$ forge build
+```
+
+### Test
+
+```shell
+$ forge test
+```
+
+### Format
+
+```shell
+$ forge fmt
+```
+
+### Gas Snapshots
+
+```shell
+$ forge snapshot
+```
+
+### Anvil
+
+```shell
+$ anvil
+```
+
+### Deploy
+
+```shell
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```
+
+### Cast
+
+```shell
+$ cast <subcommand>
+```
+
+### Help
+
+```shell
+$ forge --help
+$ anvil --help
+$ cast --help
+```
+
+data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdo
+dD0iNTAwIj4KICAgIDx0ZXh0IHg9IjAiIHk9IjE1IiBmaWxsPSJibGFjayI+IGhpISBZb3UgZGVj
+b2RlZCB0aGlzISA8L3RleHQ+Cjwvc3ZnPg==
+
+happy svg:
+data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIHhtbG5z
+PSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIx
+MDAiIGZpbGw9InllbGxvdyIgcj0iNzgiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMyIg
+Lz4KICAgIDxnIGNsYXNzPSJleWVzIj4KICAgICAgICA8Y2lyY2xlIGN4PSI3MCIgY3k9IjgyIiBy
+PSIxMiIgLz4KICAgICAgICA8Y2lyY2xlIGN4PSIxMjciIGN5PSI4MiIgcj0iMTIiIC8+CiAgICA8
+L2c+CiAgICA8cGF0aCBkPSJtMTM2LjgxIDExNi41M2MuNjkgMjYuMTctNjQuMTEgNDItODEuNTIt
+LjczIiBzdHlsZT0iZmlsbDpub25lOyBzdHJva2U6IGJsYWNrOyBzdHJva2Utd2lkdGg6IDM7IiAv
+Pgo8L3N2Zz4=
+
+sad svg:
+data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNHB4IiBoZWlnaHQ9IjEwMjRweCIgdmlld0JveD0iMCAwIDEwMjQgMTAy
+NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGZpbGw9IiMz
+MzMiCiAgICAgICAgZD0iTTUxMiA2NEMyNjQuNiA2NCA2NCAyNjQuNiA2NCA1MTJzMjAwLjYgNDQ4
+IDQ0OCA0NDggNDQ4LTIwMC42IDQ0OC00NDhTNzU5LjQgNjQgNTEyIDY0em0wIDgyMGMtMjA1LjQg
+MC0zNzItMTY2LjYtMzcyLTM3MnMxNjYuNi0zNzIgMzcyLTM3MiAzNzIgMTY2LjYgMzcyIDM3Mi0x
+NjYuNiAzNzItMzcyIDM3MnoiIC8+CiAgICA8cGF0aCBmaWxsPSIjRTZFNkU2IgogICAgICAgIGQ9
+Ik01MTIgMTQwYy0yMDUuNCAwLTM3MiAxNjYuNi0zNzIgMzcyczE2Ni42IDM3MiAzNzIgMzcyIDM3
+Mi0xNjYuNiAzNzItMzcyLTE2Ni42LTM3Mi0zNzItMzcyek0yODggNDIxYTQ4LjAxIDQ4LjAxIDAg
+MCAxIDk2IDAgNDguMDEgNDguMDEgMCAwIDEtOTYgMHptMzc2IDI3MmgtNDguMWMtNC4yIDAtNy44
+LTMuMi04LjEtNy40QzYwNCA2MzYuMSA1NjIuNSA1OTcgNTEyIDU5N3MtOTIuMSAzOS4xLTk1Ljgg
+ODguNmMtLjMgNC4yLTMuOSA3LjQtOC4xIDcuNEgzNjBhOCA4IDAgMCAxLTgtOC40YzQuNC04NC4z
+IDc0LjUtMTUxLjYgMTYwLTE1MS42czE1NS42IDY3LjMgMTYwIDE1MS42YTggOCAwIDAgMS04IDgu
+NHptMjQtMjI0YTQ4LjAxIDQ4LjAxIDAgMCAxIDAtOTYgNDguMDEgNDguMDEgMCAwIDEgMCA5Nnoi
+IC8+CiAgICA8cGF0aCBmaWxsPSIjMzMzIgogICAgICAgIGQ9Ik0yODggNDIxYTQ4IDQ4IDAgMSAw
+IDk2IDAgNDggNDggMCAxIDAtOTYgMHptMjI0IDExMmMtODUuNSAwLTE1NS42IDY3LjMtMTYwIDE1
+MS42YTggOCAwIDAgMCA4IDguNGg0OC4xYzQuMiAwIDcuOC0zLjIgOC4xLTcuNCAzLjctNDkuNSA0
+NS4zLTg4LjYgOTUuOC04OC42czkyIDM5LjEgOTUuOCA4OC42Yy4zIDQuMiAzLjkgNy40IDguMSA3
+LjRINjY0YTggOCAwIDAgMCA4LTguNEM2NjcuNiA2MDAuMyA1OTcuNSA1MzMgNTEyIDUzM3ptMTI4
+LTExMmE0OCA0OCAwIDEgMCA5NiAwIDQ4IDQ4IDAgMSAwLTk2IDB6IiAvPgo8L3N2Zz4=
+
+soldier svg:
+data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAg
+NTAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0ibm9uZSI+CiAgICA8IS0tIEJhY2tn
+cm91bmQgLS0+CiAgICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzJDMkMy
+QyIgLz4KCiAgICA8IS0tIFNrdWxsIEJhc2UgLS0+CiAgICA8cGF0aCBkPSJNMjAwIDgwIEMxNzAg
+ODAgMTQwIDExMCAxNDAgMTUwIFExNDAgMjAwIDIwMCAyNDAgUTI2MCAyMDAgMjYwIDE1MCBDMjYw
+IDExMCAyMzAgODAgMjAwIDgwIFoiIGZpbGw9IiNFMEUwRTAiCiAgICAgICAgc3Ryb2tlPSIjMDAw
+IiBzdHJva2Utd2lkdGg9IjMiIC8+CgogICAgPCEtLSBFeWUgU29ja2V0cyAtLT4KICAgIDxlbGxp
+cHNlIGN4PSIxNzUiIGN5PSIxNDAiIHJ4PSIxNSIgcnk9IjI1IiBmaWxsPSIjMDAwIiAvPgogICAg
+PGVsbGlwc2UgY3g9IjIyNSIgY3k9IjE0MCIgcng9IjE1IiByeT0iMjUiIGZpbGw9IiMwMDAiIC8+
+CgogICAgPCEtLSBOb3NlIEhvbGUgLS0+CiAgICA8cGF0aCBkPSJNMjAwIDE3MCBRMTkwIDE4MCAy
+MDAgMTkwIFEyMTAgMTgwIDIwMCAxNzAgWiIgZmlsbD0iIzAwMCIgLz4KCiAgICA8IS0tIFRlZXRo
+IC0tPgogICAgPHBhdGggZD0iTTE3MCAyMjAgUTIwMCAyNTAgMjMwIDIyMCIgZmlsbD0ibm9uZSIg
+c3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjIiIC8+CiAgICA8bGluZSB4MT0iMTgwIiB5MT0i
+MjIwIiB4Mj0iMTgwIiB5Mj0iMjMwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIgLz4K
+ICAgIDxsaW5lIHgxPSIxOTAiIHkxPSIyMjUiIHgyPSIxOTAiIHkyPSIyMzUiIHN0cm9rZT0iIzAw
+MCIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogICAgPGxpbmUgeDE9IjIwMCIgeTE9IjIzMCIgeDI9IjIw
+MCIgeTI9IjI0MCIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjIiIC8+CiAgICA8bGluZSB4
+MT0iMjEwIiB5MT0iMjI1IiB4Mj0iMjEwIiB5Mj0iMjM1IiBzdHJva2U9IiMwMDAiIHN0cm9rZS13
+aWR0aD0iMiIgLz4KICAgIDxsaW5lIHgxPSIyMjAiIHkxPSIyMjAiIHgyPSIyMjAiIHkyPSIyMzAi
+IHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIyIiAvPgoKICAgIDwhLS0gSGVsbWV0IC0tPgog
+ICAgPHBhdGggZD0iTTEyMCA2MCBRMjAwIDEwIDI4MCA2MCBDMzAwIDgwIDI5MCAxMzAgMjcwIDE1
+MCBRMjAwIDExMCAxMzAgMTUwIEMxMTAgMTMwIDEwMCA4MCAxMjAgNjAgWiIgZmlsbD0iIzQ0NCIK
+ICAgICAgICBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMyIgLz4KCiAgICA8IS0tIEhlbG1l
+dCBEZXRhaWxzIC0tPgogICAgPHJlY3QgeD0iMTgwIiB5PSI0MCIgd2lkdGg9IjQwIiBoZWlnaHQ9
+IjIwIiBmaWxsPSIjNjY2IiAvPgogICAgPGNpcmNsZSBjeD0iMTQwIiBjeT0iMTAwIiByPSI4IiBm
+aWxsPSIjMzMzIiAvPgogICAgPGNpcmNsZSBjeD0iMjYwIiBjeT0iMTAwIiByPSI4IiBmaWxsPSIj
+MzMzIiAvPgogICAgPGxpbmUgeDE9IjE5MCIgeTE9IjUwIiB4Mj0iMjEwIiB5Mj0iNTAiIHN0cm9r
+ZT0iIzExMSIgc3Ryb2tlLXdpZHRoPSIzIiAvPgo8L3N2Zz4=

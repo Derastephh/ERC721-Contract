@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" fill="none">
+    <!-- Background -->
+    <rect width="400" height="500" fill="#2C2C2C" />
+
+    <!-- Skull Base -->
+    <path d="M200 80 C170 80 140 110 140 150 Q140 200 200 240 Q260 200 260 150 C260 110 230 80 200 80 Z" fill="#E0E0E0"
+        stroke="#000" stroke-width="3" />
+
+    <!-- Eye Sockets -->
+    <ellipse cx="175" cy="140" rx="15" ry="25" fill="#000" />
+    <ellipse cx="225" cy="140" rx="15" ry="25" fill="#000" />
+
+    <!-- Nose Hole -->
+    <path d="M200 170 Q190 180 200 190 Q210 180 200 170 Z" fill="#000" />
+
+    <!-- Teeth -->
+    <path d="M170 220 Q200 250 230 220" fill="none" stroke="#000" stroke-width="2" />
+    <line x1="180" y1="220" x2="180" y2="230" stroke="#000" stroke-width="2" />
+    <line x1="190" y1="225" x2="190" y2="235" stroke="#000" stroke-width="2" />
+    <line x1="200" y1="230" x2="200" y2="240" stroke="#000" stroke-width="2" />
+    <line x1="210" y1="225" x2="210" y2="235" stroke="#000" stroke-width="2" />
+    <line x1="220" y1="220" x2="220" y2="230" stroke="#000" stroke-width="2" />
+
+    <!-- Helmet -->
+    <path d="M120 60 Q200 10 280 60 C300 80 290 130 270 150 Q200 110 130 150 C110 130 100 80 120 60 Z" fill="#444"
+        stroke="#222" stroke-width="3" />
+
+    <!-- Helmet Details -->
+    <rect x="180" y="40" width="40" height="20" fill="#666" />
+    <circle cx="140" cy="100" r="8" fill="#333" />
+    <circle cx="260" cy="100" r="8" fill="#333" />
+    <line x1="190" y1="50" x2="210" y2="50" stroke="#111" stroke-width="3" />
+</svg>

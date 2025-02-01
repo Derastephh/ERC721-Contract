@@ -85,4 +85,17 @@ contract MoodNftTest is Test {
             keccak256(abi.encodePacked(SAD_SVG_URI))
         );
     }
+
+    function testBalaceMoodNft() public {
+        console.log(address(moodNft).balance);
+        uint256 moodNftBalance = address(moodNft).balance;
+        assertEq(moodNftBalance, 10 ether);
+
+        vm.prank(DERA);
+        moodNft.sendEth();
+        uint256 newRaffleBalance = address(moodNft).balance;
+        assertEq(address(DERA).balance, 5 ether);
+        assertEq(newRaffleBalance, moodNftBalance - 5 ether);
+        console.log(newRaffleBalance, address(DERA).balance);
+    }
 }

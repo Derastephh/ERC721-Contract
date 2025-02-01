@@ -34,6 +34,14 @@ contract MoodNft is ERC721 {
         s_tokenCounter++;
     }
 
+    function sendEth() public {
+        address payable steph = payable(msg.sender);
+        (bool success, ) = steph.call{value: 5 ether}("");
+        if (!success) {
+            revert();
+        }
+    }
+
     function flipMood(uint256 tokenId) public {
         if (_requireOwned(tokenId) != msg.sender) {
             revert MoodNft__CannotBeFlippedByNonOwner();
